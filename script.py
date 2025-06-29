@@ -11,7 +11,6 @@ datetime_CL = datetime.datetime.now(tz_CL)
 
 instancias = []
 
-
 # u es alias de usuario
 
 with open("usuarios.txt") as u:
@@ -25,6 +24,7 @@ with open("usuarios.txt") as u:
             usuario.get("email"),
             usuario.get("genero") 
             ))
+
         except Exception as e:
             with open("error.log","a+") as log:
                 log.write(f"{datetime_CL.strftime("%d/%m/%Y %H:%M:%S")}, {e} \n")
