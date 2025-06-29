@@ -12,7 +12,7 @@ datetime_CL = datetime.datetime.now(tz_CL)
 instancias = []
 
 
-
+# u es alias de usuario
 
 with open("usuarios.txt") as u:
     linea = u.readline()
